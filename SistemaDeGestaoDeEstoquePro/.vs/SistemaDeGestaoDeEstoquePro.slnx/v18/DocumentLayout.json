@@ -1,0 +1,168 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|e:\\bv\\projecto final_tcc\\c# teste mvc formosa\\sistemadegestaodeestoquepro\\sistemadegestaodeestoquepro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|solutionrelative:sistemadegestaodeestoquepro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|e:\\bv\\projecto final_tcc\\c# teste mvc formosa\\sistemadegestaodeestoquepro\\sistemadegestaodeestoquepro\\service\\admin\\admininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|solutionrelative:sistemadegestaodeestoquepro\\service\\admin\\admininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|e:\\bv\\projecto final_tcc\\c# teste mvc formosa\\sistemadegestaodeestoquepro\\sistemadegestaodeestoquepro\\views\\admin\\registrarprodutos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|solutionrelative:sistemadegestaodeestoquepro\\views\\admin\\registrarprodutos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|e:\\bv\\projecto final_tcc\\c# teste mvc formosa\\sistemadegestaodeestoquepro\\sistemadegestaodeestoquepro\\service\\admin\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|solutionrelative:sistemadegestaodeestoquepro\\service\\admin\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|e:\\bv\\projecto final_tcc\\c# teste mvc formosa\\sistemadegestaodeestoquepro\\sistemadegestaodeestoquepro\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|solutionrelative:sistemadegestaodeestoquepro\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|e:\\bv\\projecto final_tcc\\c# teste mvc formosa\\sistemadegestaodeestoquepro\\sistemadegestaodeestoquepro\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|solutionrelative:sistemadegestaodeestoquepro\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|e:\\bv\\projecto final_tcc\\c# teste mvc formosa\\sistemadegestaodeestoquepro\\sistemadegestaodeestoquepro\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|solutionrelative:sistemadegestaodeestoquepro\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|e:\\bv\\projecto final_tcc\\c# teste mvc formosa\\sistemadegestaodeestoquepro\\sistemadegestaodeestoquepro\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|solutionrelative:sistemadegestaodeestoquepro\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|e:\\bv\\projecto final_tcc\\c# teste mvc formosa\\sistemadegestaodeestoquepro\\sistemadegestaodeestoquepro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB6DF3D4-D5BF-9AD0-63B4-39C47CA1A2EF}|SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj|solutionrelative:sistemadegestaodeestoquepro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EstoqueController.cs",
+              "DocumentMoniker": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Controllers\\EstoqueController.cs",
+              "RelativeDocumentMoniker": "SistemaDeGestaoDeEstoquePro\\Controllers\\EstoqueController.cs",
+              "ToolTip": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Controllers\\EstoqueController.cs",
+              "RelativeToolTip": "SistemaDeGestaoDeEstoquePro\\Controllers\\EstoqueController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T20:19:29.477Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "SistemaDeGestaoDeEstoquePro\\Controllers\\AdminController.cs",
+              "ToolTip": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "SistemaDeGestaoDeEstoquePro\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA9wCAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T19:18:13.164Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SistemaDeGestaoDeEstoquePro\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SistemaDeGestaoDeEstoquePro\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-11T08:50:35.372Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Program.cs",
+              "RelativeDocumentMoniker": "SistemaDeGestaoDeEstoquePro\\Program.cs",
+              "ToolTip": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Program.cs",
+              "RelativeToolTip": "SistemaDeGestaoDeEstoquePro\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T01:04:18.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Service\\Admin\\AdminService.cs",
+              "RelativeDocumentMoniker": "SistemaDeGestaoDeEstoquePro\\Service\\Admin\\AdminService.cs",
+              "ToolTip": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Service\\Admin\\AdminService.cs",
+              "RelativeToolTip": "SistemaDeGestaoDeEstoquePro\\Service\\Admin\\AdminService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T21:44:46.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegistrarProdutos.cshtml",
+              "DocumentMoniker": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Views\\Admin\\RegistrarProdutos.cshtml",
+              "RelativeDocumentMoniker": "SistemaDeGestaoDeEstoquePro\\Views\\Admin\\RegistrarProdutos.cshtml",
+              "ToolTip": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Views\\Admin\\RegistrarProdutos.cshtml",
+              "RelativeToolTip": "SistemaDeGestaoDeEstoquePro\\Views\\Admin\\RegistrarProdutos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-27T19:20:32.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminInterface.cs",
+              "DocumentMoniker": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Service\\Admin\\AdminInterface.cs",
+              "RelativeDocumentMoniker": "SistemaDeGestaoDeEstoquePro\\Service\\Admin\\AdminInterface.cs",
+              "ToolTip": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Service\\Admin\\AdminInterface.cs",
+              "RelativeToolTip": "SistemaDeGestaoDeEstoquePro\\Service\\Admin\\AdminInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T21:45:13.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "SistemaDeGestaoDeEstoquePro\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "SistemaDeGestaoDeEstoquePro\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAwwHIAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-27T19:09:47.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "SistemaDeGestaoDeEstoquePro\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "SistemaDeGestaoDeEstoquePro\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-27T19:06:27.924Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+﻿@using SistemaDeGestaoDeEstoquePro.ViewModel
+@model ProdutosViewModel;
+
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Registar";
+}
+
+<form method="post" asp-action="RegistrarProdutos" asp-controller="Admin">
+        
+    <div class="mb-1">
+        <input type="text" asp-for="NomeDoProduto" name="nome" placeholder="Nome do Produto" />
+    </div>
+
+    <div class="mb-1">
+        <input type="number" asp-for="PrecoProduto" placeholder="Valor do Produto" />
+    </div>
+
+    <div class="mb-1">
+        <input type="number" asp-for="QuantidadeActual" placeholder="Quantidade" />
+    </div>
+
+    <div class="mb-1">
+        <textarea maxlength="50" minlength="5" asp-for="DescricaoDoProduto">
+
+       </textarea>
+    </div>
+
+    <div class="mb-1">
+        <input type="submit"  value="Registrar"  class="btn btn-success"/>
+    </div>
+</form>
