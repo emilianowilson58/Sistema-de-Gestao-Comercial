@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "huwvPzgyTi8=",
+  "dgSpecHash": "QywZyoTyBWM=",
   "success": true,
-  "projectFilePath": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj",
+  "projectFilePath": "C:\\Users\\Formosa_\\source\\repos\\emilianowilson58\\Sistema-de-Gestao-Comercial\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Formosa_\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\Formosa_\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",

@@ -1,52 +1,22 @@
-# Prerequisites
-*.d
+# Visual Studio
+.vs/
+*.user
+*.suo
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Ficheiros de compilação
+bin/
+obj/
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Ficheiros temporários
+*.log
+*.tmp
 
-# Precompiled Headers
-*.gch
-*.pch
+# Configurações locais
+appsettings.Development.json
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Publicação
+publish/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Sistema operativo
+Thumbs.db
+.DS_Store

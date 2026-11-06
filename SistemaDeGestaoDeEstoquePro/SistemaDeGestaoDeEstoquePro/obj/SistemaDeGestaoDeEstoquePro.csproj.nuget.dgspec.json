@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj": {}
+    "C:\\Users\\Formosa_\\source\\repos\\emilianowilson58\\Sistema-de-Gestao-Comercial\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj": {}
   },
   "projects": {
-    "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj": {
+    "C:\\Users\\Formosa_\\source\\repos\\emilianowilson58\\Sistema-de-Gestao-Comercial\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj",
+        "projectUniqueName": "C:\\Users\\Formosa_\\source\\repos\\emilianowilson58\\Sistema-de-Gestao-Comercial\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj",
         "projectName": "SistemaDeGestaoDeEstoquePro",
-        "projectPath": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj",
+        "projectPath": "C:\\Users\\Formosa_\\source\\repos\\emilianowilson58\\Sistema-de-Gestao-Comercial\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro.csproj",
         "packagesPath": "C:\\Users\\Formosa_\\.nuget\\packages\\",
-        "outputPath": "E:\\bv\\Projecto Final_TCC\\C# Teste MVC Formosa\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\obj\\",
+        "outputPath": "C:\\Users\\Formosa_\\source\\repos\\emilianowilson58\\Sistema-de-Gestao-Comercial\\SistemaDeGestaoDeEstoquePro\\SistemaDeGestaoDeEstoquePro\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -100,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
