@@ -39,6 +39,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVnaXN0cmFyUHJvZHV0b3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Formosa_/source/repos/emilianowilson58/Sistema-de-Gestao-Comercial/SistemaDeGestaoDeEstoquePro/SistemaDeGestaoDeEstoquePro/Views/Caixa/HomeCaixa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FpeGFcSG9tZUNhaXhhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Formosa_/source/repos/emilianowilson58/Sistema-de-Gestao-Comercial/SistemaDeGestaoDeEstoquePro/SistemaDeGestaoDeEstoquePro/Views/Caixa/NovaVenda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FpeGFcTm92YVZlbmRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Formosa_/source/repos/emilianowilson58/Sistema-de-Gestao-Comercial/SistemaDeGestaoDeEstoquePro/SistemaDeGestaoDeEstoquePro/Views/Estoque/AjusteEstoque.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0b3F1ZVxBanVzdGVFc3RvcXVlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -89,6 +97,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Formosa_/source/repos/emilianowilson58/Sistema-de-Gestao-Comercial/SistemaDeGestaoDeEstoquePro/SistemaDeGestaoDeEstoquePro/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Formosa_/source/repos/emilianowilson58/Sistema-de-Gestao-Comercial/SistemaDeGestaoDeEstoquePro/SistemaDeGestaoDeEstoquePro/Views/Shared/_LayoutCaixa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDYWl4YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Formosa_/source/repos/emilianowilson58/Sistema-de-Gestao-Comercial/SistemaDeGestaoDeEstoquePro/SistemaDeGestaoDeEstoquePro/Views/Shared/_ValidationScriptsPartial.cshtml]
