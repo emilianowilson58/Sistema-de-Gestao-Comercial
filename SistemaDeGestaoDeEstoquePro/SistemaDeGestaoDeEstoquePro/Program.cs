@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using SistemaDeGestaoDeEstoquePro.Data;
 using SistemaDeGestaoDeEstoquePro.Service.Admin;
+using SistemaDeGestaoDeEstoquePro.Service.Estoque;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,13 +12,13 @@ builder.Services.AddControllersWithViews();
 //Registrar e configurar o contexto para ser utilizado pela aplicação
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
-    options.UseSqlServer(
-    builder.Configuration.GetConnectionString("DefaultConnection"))
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 
 );
 
 
 builder.Services.AddScoped<AdminInterface, AdminService>();
+builder.Services.AddScoped<EstoqueInterface, EstoqueService>();
 
 var app = builder.Build();
 

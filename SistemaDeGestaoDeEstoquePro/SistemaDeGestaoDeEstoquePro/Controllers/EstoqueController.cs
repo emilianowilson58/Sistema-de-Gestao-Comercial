@@ -1,11 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SistemaDeGestaoDeEstoquePro.Service.Estoque;
 
 namespace SistemaDeGestaoDeEstoquePro.Controllers
 {
     public class EstoqueController : Controller
     {
-        public IActionResult Estoque()
+        private readonly EstoqueInterface _estoqueInterface;
+        public EstoqueController(EstoqueInterface estoqueInterface)
         {
+            _estoqueInterface = estoqueInterface;
+        }
+        public async Task<IActionResult> Estoque()
+        {
+            ViewBag.TotalProdutos = await _estoqueInterface.TotalProdutos();
+            ViewBag.TotalEstoqueBaixo = await _estoqueInterface.TotalProdutosEstoqueBaixo();
+            ViewBag.TotalEsgotado = await _estoqueInterface.TotalEstoqueEsgotado();
+            ViewBag.TotalUnidades = await _estoqueInterface.TotalUnidades();
+
             return View();
         }
 
@@ -14,8 +25,13 @@ namespace SistemaDeGestaoDeEstoquePro.Controllers
             return View();
         }
 
-        public IActionResult RegistraSaida()
+        public async Task<IActionResult> RegistraSaida()
         {
+            ViewBag.TotalProdutos = await _estoqueInterface.TotalProdutos();
+            ViewBag.TotalEstoqueBaixo = await _estoqueInterface.TotalProdutosEstoqueBaixo();
+            ViewBag.TotalEsgotado = await _estoqueInterface.TotalEstoqueEsgotado();
+            ViewBag.TotalUnidades = await _estoqueInterface.TotalUnidades();
+
             return View();
         }
 
@@ -33,8 +49,12 @@ namespace SistemaDeGestaoDeEstoquePro.Controllers
         {
             return View();
         }
-        public IActionResult ConsultarEstoque()
+        public async Task<IActionResult> ConsultarEstoque()
         {
+            ViewBag.TotalProdutos = await _estoqueInterface.TotalProdutos();
+            ViewBag.TotalEstoqueBaixo = await _estoqueInterface.TotalProdutosEstoqueBaixo();
+            ViewBag.TotalEsgotado = await _estoqueInterface.TotalEstoqueEsgotado();
+            ViewBag.TotalUnidades = await _estoqueInterface.TotalUnidades();
             return View();
         }
 

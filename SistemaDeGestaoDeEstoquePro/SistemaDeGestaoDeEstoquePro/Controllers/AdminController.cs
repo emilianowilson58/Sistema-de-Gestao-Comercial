@@ -29,10 +29,10 @@ namespace SistemaDeGestaoDeEstoquePro.Controllers
             {
                 var Registrar = await _adminInterface.RegistrarProdutos(produtoModel);
 
-                return RedirectToAction("RegistrarEntrarda", "Estoque");
+                return RedirectToAction("Estoque", "Estoque");
             }
 
-            return View(produtoModel);
+            return View();
         }
     }
 }

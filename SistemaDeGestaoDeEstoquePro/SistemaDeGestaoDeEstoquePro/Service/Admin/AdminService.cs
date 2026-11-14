@@ -15,20 +15,20 @@ namespace SistemaDeGestaoDeEstoquePro.Service.Admin
         {
             try
             {
-                var Produtos = new ProdutoModel
+                var NovoProduto = new ProdutoModel
                 {
                     NomeDoProduto = produtoModel.NomeDoProduto,
                     DescricaoDoProduto = produtoModel.DescricaoDoProduto,
                     PrecoProduto = produtoModel.PrecoProduto,
                     QuantidadeActual = produtoModel.QuantidadeActual,
                     CategoriaId = produtoModel.CategoriaId,
-                    FornecedorId = produtoModel.FornecedorId
+                    EstadoProduto = true
                 };
 
-                _context.Add(Produtos);
+                _context.Produto.Add(NovoProduto);
                 await _context.SaveChangesAsync();
 
-                return Produtos;
+                return NovoProduto;
 
 
             }catch(Exception erro)

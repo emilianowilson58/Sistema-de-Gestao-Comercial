@@ -13,7 +13,7 @@ namespace SistemaDeGestaoDeEstoquePro.Data
         //Permitir trabalhar com conjuntos de entidade (consulta e manipulação)
 
         public DbSet<CaixaModel> Caixa { get; set; }
-        public DbSet<CategoriaModel> Categorias { get; set; }
+        public DbSet<CategoriaModel> Categoria { get; set; }
         public DbSet<ClienteModel> Cliente { get; set; }
         public DbSet<CompraModel> Compra { get; set; }
         public DbSet<EstoqueModel> Estoque { get; set; }

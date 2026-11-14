@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace SistemaDeGestaoDeEstoquePro.Migrations
 {
     /// <inheritdoc />
-    public partial class NovaMi : Migration
+    public partial class News : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -198,9 +198,7 @@ namespace SistemaDeGestaoDeEstoquePro.Migrations
                     DescricaoDoProduto = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PrecoProduto = table.Column<double>(type: "float", nullable: false),
                     QuantidadeActual = table.Column<int>(type: "int", nullable: false),
-                    ImagemProdutoUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EstadoProduto = table.Column<bool>(type: "bit", nullable: false),
-                    FornecedorId = table.Column<int>(type: "int", nullable: false),
                     CategoriaId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -272,8 +270,7 @@ namespace SistemaDeGestaoDeEstoquePro.Migrations
                     Quantidade = table.Column<int>(type: "int", nullable: false),
                     PrecoCompra = table.Column<double>(type: "float", nullable: false),
                     SubTotal = table.Column<int>(type: "int", nullable: false),
-                    CompraModelId = table.Column<int>(type: "int", nullable: true),
-                    ProdutoModelId = table.Column<int>(type: "int", nullable: true)
+                    CompraModelId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -282,11 +279,6 @@ namespace SistemaDeGestaoDeEstoquePro.Migrations
                         name: "FK_ItemCompra_Compra_CompraModelId",
                         column: x => x.CompraModelId,
                         principalTable: "Compra",
-                        principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_ItemCompra_Produto_ProdutoModelId",
-                        column: x => x.ProdutoModelId,
-                        principalTable: "Produto",
                         principalColumn: "Id");
                 });
 
@@ -299,11 +291,6 @@ namespace SistemaDeGestaoDeEstoquePro.Migrations
                 name: "IX_ItemCompra_CompraModelId",
                 table: "ItemCompra",
                 column: "CompraModelId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_ItemCompra_ProdutoModelId",
-                table: "ItemCompra",
-                column: "ProdutoModelId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ItemVenda_VendaModelId",
@@ -359,6 +346,9 @@ namespace SistemaDeGestaoDeEstoquePro.Migrations
                 name: "Pagamento");
 
             migrationBuilder.DropTable(
+                name: "Produto");
+
+            migrationBuilder.DropTable(
                 name: "SessaoCaixa");
 
             migrationBuilder.DropTable(
@@ -368,16 +358,13 @@ namespace SistemaDeGestaoDeEstoquePro.Migrations
                 name: "Compra");
 
             migrationBuilder.DropTable(
-                name: "Produto");
-
-            migrationBuilder.DropTable(
                 name: "Venda");
 
             migrationBuilder.DropTable(
-                name: "Fornecedor");
+                name: "Categorias");
 
             migrationBuilder.DropTable(
-                name: "Categorias");
+                name: "Fornecedor");
         }
     }
 }

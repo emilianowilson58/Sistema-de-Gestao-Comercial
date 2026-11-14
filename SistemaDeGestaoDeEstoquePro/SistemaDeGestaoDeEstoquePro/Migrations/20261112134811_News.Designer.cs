@@ -12,8 +12,8 @@ using SistemaDeGestaoDeEstoquePro.Data;
 namespace SistemaDeGestaoDeEstoquePro.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20261027213212_NovaMi")]
-    partial class NovaMi
+    [Migration("20261112134811_News")]
+    partial class News
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -219,9 +219,6 @@ namespace SistemaDeGestaoDeEstoquePro.Migrations
                     b.Property<int>("ProdutoId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("ProdutoModelId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Quantidade")
                         .HasColumnType("int");
 
@@ -231,8 +228,6 @@ namespace SistemaDeGestaoDeEstoquePro.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CompraModelId");
-
-                    b.HasIndex("ProdutoModelId");
 
                     b.ToTable("ItemCompra");
                 });
@@ -357,13 +352,6 @@ namespace SistemaDeGestaoDeEstoquePro.Migrations
 
                     b.Property<bool>("EstadoProduto")
                         .HasColumnType("bit");
-
-                    b.Property<int>("FornecedorId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ImagemProdutoUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NomeDoProduto")
                         .IsRequired()
@@ -519,10 +507,6 @@ namespace SistemaDeGestaoDeEstoquePro.Migrations
                     b.HasOne("SistemaDeGestaoDeEstoquePro.Models.CompraModel", null)
                         .WithMany("itemCompraModels")
                         .HasForeignKey("CompraModelId");
-
-                    b.HasOne("SistemaDeGestaoDeEstoquePro.Models.ProdutoModel", null)
-                        .WithMany("itemCompraModels")
-                        .HasForeignKey("ProdutoModelId");
                 });
 
             modelBuilder.Entity("SistemaDeGestaoDeEstoquePro.Models.ItemVendaModel", b =>
@@ -556,11 +540,6 @@ namespace SistemaDeGestaoDeEstoquePro.Migrations
             modelBuilder.Entity("SistemaDeGestaoDeEstoquePro.Models.FornecedorModel", b =>
                 {
                     b.Navigation("Compra");
-                });
-
-            modelBuilder.Entity("SistemaDeGestaoDeEstoquePro.Models.ProdutoModel", b =>
-                {
-                    b.Navigation("itemCompraModels");
                 });
 
             modelBuilder.Entity("SistemaDeGestaoDeEstoquePro.Models.VendaModel", b =>

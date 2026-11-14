@@ -9,7 +9,7 @@
 <form method="post" asp-action="RegistrarProdutos" asp-controller="Admin">
         
     <div class="mb-1">
-        <input type="text" asp-for="NomeDoProduto" name="nome" placeholder="Nome do Produto" />
+        <input type="text" asp-for="NomeDoProduto"  placeholder="Nome do Produto" />
     </div>
 
     <div class="mb-1">
@@ -21,12 +21,19 @@
     </div>
 
     <div class="mb-1">
+        <select asp-for="CategoriaId">
+            <option value="1">Bebida</option>
+            <option value="2">Comida</option>
+        </select>
+    </div>
+
+    <div class="mb-1">
         <textarea maxlength="50" minlength="5" asp-for="DescricaoDoProduto">
 
        </textarea>
     </div>
 
     <div class="mb-1">
-        <input type="submit"  value="Registrar"  class="btn btn-success"/>
+         <button type="submit" class="btn btn-success">Registrar</button>
     </div>
 </form>
