@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<ProdutoModel>
 <div id="content-wrapper" class="d-flex flex-column">
     @* style="background-color: #163657" *@
     <!-- Main Content -->
@@ -296,7 +296,6 @@
                 <div class="col-xl-6 col-lg-6 col-md-12 mb-4">
                     <div class="card shadow h-100">
                         <div >
-                            
                             <div class="card-header py-3 d-flex align-items-center gap-3">
                                 <div>
                                     <i class="fas fa-exclamation-circle fa-1x text-warning"></i>
@@ -305,9 +304,59 @@
                             </div>
                         </div>
 
-                        <div class="card-body text-center p-3">
+                        <div class="card-body text-center p-0">
                             @* Tabela dos produtos em estoque baixo *@
-                            <span>Lista está vázia</span>
+                            @if (ViewBag.ProdutosBaixo != null)
+                            {
+                                <table class="table table-striped w-100">
+
+                                    <thead class="card-header">
+                                        <tr>
+                                            <td class="text-dark"><strong>Produto</strong></td>
+                                            <td class="text-dark"><strong>Categoria</strong></td>
+                                            <td class="text-dark"><strong>Quantidade Mínima</strong></td>
+                                            <td class="text-dark"><strong>Status</strong></td>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody class="">
+                                        @foreach (var produto in ViewBag.ProdutosBaixo)
+                                        {
+                                            <tr>
+                                                <td>@produto.NomeDoProduto</td>
+                                                <td>@produto.Categoria.NomeCategoria</td>
+                                                <td>
+                                                    @if (produto.QuantidadeActual == 0)
+                                                    {
+                                                        <strong>@produto.QuantidadeActual</strong>
+                                                    }
+                                                    else
+                                                    {
+                                                        <strong>@produto.QuantidadeActual</strong>
+                                                    }
+
+                                                    
+                                                </td>
+                                                <td>
+                                                    @if (produto.QuantidadeActual == 0)
+                                                    {
+                                                        <span class="text-danger  p-1"><strong>Esgotado</strong></span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="text-warning  p-1"><strong>Baixo</strong></span>
+                                                    }
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+
+                                </table>
+                            }
+                            else
+                            {
+                                <span>Nenhum Produtos está a Baixo do Limite</span>
+                            }
                         </div>
 
                     </div>

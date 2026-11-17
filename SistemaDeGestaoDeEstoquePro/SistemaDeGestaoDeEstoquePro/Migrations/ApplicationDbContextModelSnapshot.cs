@@ -360,6 +360,9 @@ namespace SistemaDeGestaoDeEstoquePro.Migrations
                     b.Property<int>("QuantidadeActual")
                         .HasColumnType("int");
 
+                    b.Property<int>("QuantidadeMinima")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CategoriaId");

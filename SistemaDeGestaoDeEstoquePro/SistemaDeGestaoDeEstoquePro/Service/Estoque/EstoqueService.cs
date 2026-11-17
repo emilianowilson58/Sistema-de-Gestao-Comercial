@@ -48,5 +48,36 @@ namespace SistemaDeGestaoDeEstoquePro.Service.Estoque
             return await _context.Produto.SumAsync(Unidades => Unidades.QuantidadeActual);
 
         }
+
+        public async Task<List<ProdutoModel>> ListaDosProdutosBaixo()
+        {
+            try
+            {
+                return await _context.Produto.Where(produto => produto.QuantidadeActual < 5).Include(produto => produto.Categoria).ToListAsync();
+
+            }catch(Exception erro)
+            {
+                throw;
+            }
+        }
+
+        public async Task<List<ProdutoModel>> TodosProdutos()
+        {
+            try
+            {
+                return await _context.Produto.Include(p => p.Categoria).ToListAsync();
+
+            }catch(Exception erro)
+            {
+                throw;
+            }
+        }
+
+        public async Task<List<CategoriaModel>> Categorias()
+        {
+            var Categoria = await _context.Categoria.ToListAsync();
+
+            return Categoria;
+        }
     }
 }

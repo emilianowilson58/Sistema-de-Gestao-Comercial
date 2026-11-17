@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SistemaDeGestaoDeEstoquePro.Service.Estoque;
+using SistemaDeGestaoDeEstoquePro.ViewModel;
 
 namespace SistemaDeGestaoDeEstoquePro.Controllers
 {
@@ -16,6 +17,8 @@ namespace SistemaDeGestaoDeEstoquePro.Controllers
             ViewBag.TotalEstoqueBaixo = await _estoqueInterface.TotalProdutosEstoqueBaixo();
             ViewBag.TotalEsgotado = await _estoqueInterface.TotalEstoqueEsgotado();
             ViewBag.TotalUnidades = await _estoqueInterface.TotalUnidades();
+            ViewBag.ProdutosBaixo = await _estoqueInterface.ListaDosProdutosBaixo();
+
 
             return View();
         }
@@ -31,6 +34,8 @@ namespace SistemaDeGestaoDeEstoquePro.Controllers
             ViewBag.TotalEstoqueBaixo = await _estoqueInterface.TotalProdutosEstoqueBaixo();
             ViewBag.TotalEsgotado = await _estoqueInterface.TotalEstoqueEsgotado();
             ViewBag.TotalUnidades = await _estoqueInterface.TotalUnidades();
+
+            
 
             return View();
         }
@@ -55,7 +60,32 @@ namespace SistemaDeGestaoDeEstoquePro.Controllers
             ViewBag.TotalEstoqueBaixo = await _estoqueInterface.TotalProdutosEstoqueBaixo();
             ViewBag.TotalEsgotado = await _estoqueInterface.TotalEstoqueEsgotado();
             ViewBag.TotalUnidades = await _estoqueInterface.TotalUnidades();
-            return View();
+
+            var categoria = await _estoqueInterface.Categorias();
+
+            ViewBag.Categorias = categoria;
+
+            var TodosProdutos = await _estoqueInterface.TodosProdutos();
+
+            return View(TodosProdutos);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ConsultarEstoque(string Pesquisar)
+        {
+            var listarItems = await _estoqueInterface.TodosProdutos();
+
+            var viewModel = new ProdutosViewModel();
+
+
+            if (!string.IsNullOrEmpty(Pesquisar))
+            {
+                listarItems = listarItems.Where(p => p.NomeDoProduto.Contains(Pesquisar) || p.Categoria.NomeCategoria.Contains(Pesquisar)).ToList();
+            }
+
+            viewModel.Pesquisar = Pesquisar;
+            viewModel.Produtos = listarItems;
+            return View(viewModel);
         }
 
         public IActionResult EstoqueBaixo()
