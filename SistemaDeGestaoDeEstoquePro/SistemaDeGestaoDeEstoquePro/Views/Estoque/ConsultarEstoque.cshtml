@@ -1,5 +1,5 @@
 ﻿@using SistemaDeGestaoDeEstoquePro.ViewModel
-@model ProdutosViewModel;
+@model ProdutosViewModel
 <div id="content-wrapper" class="d-flex flex-column" style="color: black">
     @* style="background-color: #163657" *@
     <!-- Main Content -->
@@ -192,14 +192,14 @@
         </div>
 
         <!-- inputs de filtro do estoque-->
-        <form class="mb-5 bg-light" asp-action="ConsultarEstoque" asp-controller="Estoque">
+        <form class="mb-5 bg-light" method="get">
             <div class="row p-2 mb-4 border-left-primary bg-white ml-4 rounded-start-3 align-content-center shadow-sm mr-4">
                 <div class="col-xl-4 col-lg-4 col-md-2 p-2">
                     <div>
                         <label class="mb-2" style="color: black">Buscar Produto</label>
                     </div>
                         <div>
-                            <input type="ssearch" class="form-control bg-light border-1" asp-for="" placeholder="Pesquisar produto por nome ou código">
+                            <input type="search" asp-for="Pesquisar" class="form-control bg-light border-1" placeholder="Pesquisar produto por nome ou código">
                         </div>
                 </div>
 
@@ -209,8 +209,8 @@
                         </div>
                         <div class="input-group">
 
-                            <select class=" bg-light border-1 p-1 w-100 form-select" style="border-radius: 5px; height: 37px; border: 1px solid silver; cursor: pointer;" asp-for="Cat">
-                                <option value="all">Todos</option>
+                            <select asp-for="CategoriaId" class=" bg-light border-1 p-1 w-100 form-select" style="border-radius: 5px; height: 37px; border: 1px solid silver; cursor: pointer;">
+                                <option value="all">selecione a categoria</option>
                                 @foreach (var categoris in ViewBag.Categorias)
                                 {
                                     <option value="@categoris.Id">@categoris.NomeCategoria</option>
@@ -224,8 +224,8 @@
                         <label class=" mb-2" style="color: black">Status</label>
                         </div>
                         <div class="input-group">
-                        <select class=" bg-light p-1 w-100" style="border-radius: 5px; height: 37px; border: 1px solid silver; cursor: pointer;" asp-for="">
-                                <option value="all">Todos</option>
+                        <select class=" bg-light p-1 w-100" style="border-radius: 5px; height: 37px; border: 1px solid silver; cursor: pointer;">
+                                <option value="all">selecione o Status</option>
                                 <option value="Em estoque">Normal</option>
                                 <option value="Estoque baixo">Estoque baixo</option>
                                 <option value="Esgotado">Esgotado</option>
@@ -244,7 +244,6 @@
                         </div>
                 </div>
             </div>
-
          </form>
         
          <!-- Estatu de vendas -->
@@ -361,39 +360,42 @@
 
                         <div class="card-body text-center">
                             @* Tabela dos produtos em estoque baixo *@
-                            @if (Model.Count() > 0)
+                            @if (Model != null)
                             {
-                                <table class="table table-striped">
-                                    <thead class="card-header">
-                                        <tr>
-                                            <td class="text-dark">Produtos</td>
-                                            <td class="text-dark">Categorias</td>
-                                            <td class="text-dark">Quantidade Atual</td>
-                                            <td class="text-dark">Quantidade Mínima</td>
-                                            <td class="text-dark">Preço de Venda</td>
-                                            <td class="text-dark">Status</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach (var items in Model)
-                                        {
+                                @if (Model.Produtos.Count() > 0)
+                                {
+                                    <table class="table table-striped"">
+                                        <thead class="card-header">
                                             <tr>
-                                                <td>@items.NomeDoProduto</td>
-                                                <td>@items.Categoria.NomeCategoria</td>
-                                                <td>@items.QuantidadeActual</td>
-                                                <td>@items.QuantidadeMinima</td>
-                                                <td>@items.PrecoProduto <span> Kz</span></td>
-                                                <td>Não Disponível</td>
+                                                <td class="text-dark">Produtos</td>
+                                                <td class="text-dark">Categorias</td>
+                                                <td class="text-dark">Quantidade Atual</td>
+                                                <td class="text-dark">Quantidade Mínima</td>
+                                                <td class="text-dark">Preço de Venda</td>
+                                                <td class="text-dark">Status</td>
                                             </tr>
-                                        }
-                                    </tbody>
-                                </table>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var items in Model.Produtos)
+                                            {
+                                                <tr>
+                                                    <td class="text-dark">@items.NomeDoProduto</td>
+                                                    <td class="text-dark">@items.Categoria.NomeCategoria</td>
+                                                    <td class="text-dark">@items.QuantidadeActual</td>
+                                                    <td class="text-dark">@items.QuantidadeMinima</td>
+                                                    <td class="text-dark">@items.PrecoProduto <span> Kz</span></td>
+                                                    <td>Não Disponível</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                }
+                                else
+                                {
+                                    <span>Nenhum produto foi encotrado</span>
+                                }
                             }
-                            else
-                            {
-                                <span>Nenhum Produto Registrado</span>
-                            }
-                           
+
                         </div>
 
                     </div>

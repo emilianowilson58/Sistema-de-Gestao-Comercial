@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SistemaDeGestaoDeEstoquePro.Data;
 using SistemaDeGestaoDeEstoquePro.Models;
+using SistemaDeGestaoDeEstoquePro.ViewModel;
 
 namespace SistemaDeGestaoDeEstoquePro.Service.Estoque
 {
@@ -78,6 +79,31 @@ namespace SistemaDeGestaoDeEstoquePro.Service.Estoque
             var Categoria = await _context.Categoria.ToListAsync();
 
             return Categoria;
+        }
+
+        public async Task<ProdutoModel?> RegistrarEntradas(ProdutosViewModel DadosProduto)
+        {
+            
+            try
+            {
+                var buscarProduto = await _context.Produto.FirstOrDefaultAsync(p => p.NomeDoProduto == DadosProduto.NomeDoProduto);
+
+                if(buscarProduto == null)
+                {
+                    
+                }
+
+                buscarProduto.QuantidadeActual = DadosProduto.QuantidadeActual;
+
+                _context.Update(buscarProduto);
+                await _context.SaveChangesAsync();
+
+                return buscarProduto;
+            }
+            catch(Exception erro)
+            {
+                throw;
+            }
         }
     }
 }

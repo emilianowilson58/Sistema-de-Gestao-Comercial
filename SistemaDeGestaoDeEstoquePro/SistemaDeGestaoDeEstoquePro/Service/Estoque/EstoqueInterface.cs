@@ -1,4 +1,5 @@
 ﻿using SistemaDeGestaoDeEstoquePro.Models;
+using SistemaDeGestaoDeEstoquePro.ViewModel;
 
 namespace SistemaDeGestaoDeEstoquePro.Service.Estoque
 {
@@ -11,5 +12,7 @@ namespace SistemaDeGestaoDeEstoquePro.Service.Estoque
         Task<int> TotalUnidades();
         Task<List<CategoriaModel>> Categorias();
         Task <List<ProdutoModel>> ListaDosProdutosBaixo();
+
+        Task<ProdutoModel?> RegistrarEntradas(ProdutosViewModel DadosProduto);
     }
 }

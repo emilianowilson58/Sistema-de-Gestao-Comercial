@@ -28,6 +28,8 @@ namespace SistemaDeGestaoDeEstoquePro.Controllers
             return View();
         }
 
+
+
         public async Task<IActionResult> RegistraSaida()
         {
             ViewBag.TotalProdutos = await _estoqueInterface.TotalProdutos();
@@ -54,38 +56,30 @@ namespace SistemaDeGestaoDeEstoquePro.Controllers
         {
             return View();
         }
-        public async Task<IActionResult> ConsultarEstoque()
+        public async Task<IActionResult> ConsultarEstoque(string Pesquisar, int categoriaid)
         {
+            var listarItems = await _estoqueInterface.TodosProdutos();
+
+            //Cartões de resumo de dados
             ViewBag.TotalProdutos = await _estoqueInterface.TotalProdutos();
             ViewBag.TotalEstoqueBaixo = await _estoqueInterface.TotalProdutosEstoqueBaixo();
             ViewBag.TotalEsgotado = await _estoqueInterface.TotalEstoqueEsgotado();
             ViewBag.TotalUnidades = await _estoqueInterface.TotalUnidades();
 
-            var categoria = await _estoqueInterface.Categorias();
+            //Categoria da tela de produtos
+            ViewBag.Categorias = await _estoqueInterface.Categorias();
 
-            ViewBag.Categorias = categoria;
-
-            var TodosProdutos = await _estoqueInterface.TodosProdutos();
-
-            return View(TodosProdutos);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> ConsultarEstoque(string Pesquisar)
-        {
-            var listarItems = await _estoqueInterface.TodosProdutos();
-
-            var viewModel = new ProdutosViewModel();
-
+            var ViewModel = new ProdutosViewModel();
 
             if (!string.IsNullOrEmpty(Pesquisar))
             {
-                listarItems = listarItems.Where(p => p.NomeDoProduto.Contains(Pesquisar) || p.Categoria.NomeCategoria.Contains(Pesquisar)).ToList();
+                listarItems = listarItems.Where(produto => produto.NomeDoProduto.Contains(Pesquisar) && produto.Categoria.Id == (categoriaid)).ToList();
             }
 
-            viewModel.Pesquisar = Pesquisar;
-            viewModel.Produtos = listarItems;
-            return View(viewModel);
+            ViewModel.Pesquisar = Pesquisar;
+            ViewModel.Produtos = listarItems;
+            return View(ViewModel);
+
         }
 
         public IActionResult EstoqueBaixo()
@@ -95,6 +89,20 @@ namespace SistemaDeGestaoDeEstoquePro.Controllers
 
         public IActionResult AjusteEstoque()
         {
+            return View();
+        }
+
+
+        //HttpPost
+        [HttpPost]
+        public async Task<IActionResult> RegistrarEntrarda(ProdutosViewModel DadosProduto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(DadosProduto);
+            }
+
+            var update = await _estoqueInterface.RegistrarEntradas(DadosProduto);
             return View();
         }
     }
